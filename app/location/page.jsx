@@ -24,7 +24,7 @@ const page = () => {
             <span className='text-2xl font-black text-green-600'>See Crop Affected Areas</span>
             <div className='searchbar'>
                 <input type="text" placeholder='Search for a Location..' />
-                <button>Search <ArrowRight/></button>
+                <button style={{color:'white'}}>Search <ArrowRight/></button>
             </div>
             <Image src={'/assets/preview.webp'} height={1000} width={1000} className='rounded-2xl'/>
         </div>
