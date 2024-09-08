@@ -17,15 +17,15 @@ const Prompt = () => {
     const handleSubmit=async()=>{
         if(!image) return;
         try{
-            const response = await fetch('/api/prompt',{
-                method:'POST',
-                headers:{
-                    'Content-Type':'application/json'
-                },
-                body: JSON.stringify({image:image})
-            });
-            const result = await response.json();
-            console.log('API response:',result);
+            // const response = await fetch('/api/prompt',{
+            //     method:'POST',
+            //     headers:{
+            //         'Content-Type':'application/json'
+            //     },
+            //     body: JSON.stringify({image:image})
+            // });
+            // const result = await response.json();
+            console.log('API response: this is Demo');
         }catch(error){
             console.log("Error sending image to API:",error);
         }
