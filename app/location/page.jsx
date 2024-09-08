@@ -4,6 +4,7 @@ import Sidebar from '../_components/Sidebar.jsx'
 import { AlignLeft, Settings,ArrowRight,User,SwatchBook,ShieldPlus } from 'lucide-react'
 import Image from 'next/image'
 import {doctors} from '../../Schema/index.js'
+import Link from 'next/link'
 
 const page = () => {
   const [extend,setExtend]=useState(false);
@@ -14,7 +15,7 @@ const page = () => {
     <>
     <div className='w-screen flex items-center justify-between pr-10 pl-10 pt-5 backdrop-blur-sm'>
       <button onClick={handleToggleSidebar}><AlignLeft size={28}/></button>
-        <Image className='rounded-md' src='/assets/logo.png' width={150} height={150} alt='logo'/>
+      <Link href={'/'}><Image className='rounded-md' src='/assets/logo.png' width={150} height={150} alt='logo'/></Link>
         <Settings size={28}/>
     </div>
     <div className={`flex absolute ${extend ? 'w-full' : 'w-full'} transition-all duration-300`}>
