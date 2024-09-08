@@ -17,9 +17,9 @@ const page = () => {
         <Image className='rounded-md' src='/assets/logo.png' width={150} height={150} alt='logo'/>
         <Settings size={28}/>
     </div>
-    <div className={`flex ${extend ? 'w-full' : 'w-full'} transition-all duration-300`}>
+    <div className={`flex absolute ${extend ? 'w-full' : 'w-full'} transition-all duration-300`}>
         {extend && <Sidebar />}
-        <div className={`flex-1 ${extend ? 'ml-60' : 'ml-0'} transition-all duration-300`}>
+        <div className="flex-1">
           <Prompt />
         </div>
       </div>
