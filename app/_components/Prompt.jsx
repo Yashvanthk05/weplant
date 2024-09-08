@@ -34,8 +34,8 @@ const Prompt = () => {
   return (
     <div className='pp'>
         <div className='flex flex-col items-center justify-center'>
-            <span className='text-3xl text-green-600 font-black'>AI Driven Crop Disease Prediction</span>
-        <span className='text-3xl text-green-800 font-black'>& Management System</span>
+            <span className='text-2xl text-green-600 font-black'>AI Driven Crop Disease Prediction</span>
+        <span className='text-2xl text-green-800 font-black'>& Management System</span>
         </div>
         <div className='flex gap-4'>
             <div className='tab'>
