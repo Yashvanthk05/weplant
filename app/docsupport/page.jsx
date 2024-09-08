@@ -24,7 +24,7 @@ const page = () => {
             <span className='text-2xl font-black text-green-600'>24x7 Plant Pathologist Support</span>
             <div className='searchbar'>
                 <input type="text" placeholder='Search a Doctor..' />
-                <button>Find<ArrowRight/></button>
+                <button style={{color:'white'}}>Find<ArrowRight/></button>
             </div>
             <div className='doctors'>
                 {doctors.map(doctor=>(
