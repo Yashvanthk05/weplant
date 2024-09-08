@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "helmet": "^7.1.0",
     "lucide-react": "^0.439.0",
     "next": "14.2.8",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
