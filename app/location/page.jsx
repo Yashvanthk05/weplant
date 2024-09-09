@@ -5,6 +5,8 @@ import { AlignLeft, Settings,ArrowRight,User,SwatchBook,ShieldPlus } from 'lucid
 import Image from 'next/image'
 import {doctors} from '../../Schema/index.js'
 import Link from 'next/link'
+import {MapContainer,Marker,Popup,TileLayer} from'react-leaflet';
+import "leaflet/dist/leaflet.css";
 
 const page = () => {
   const [extend,setExtend]=useState(false);
@@ -26,7 +28,9 @@ const page = () => {
                 <input type="text" placeholder='Search for a Location..' />
                 <button style={{color:'white'}}>Search <ArrowRight/></button>
             </div>
-            <Image src={'/assets/preview.webp'} height={1000} width={1000} className='rounded-2xl'/>
+            <MapContainer center={[12.8422129,80.1551188]} zoom={17} style={{ height: '500px', width: '100%' ,borderRadius:'20px'}}>
+              <TileLayer attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+            </MapContainer>
         </div>
       </div>
     </>
